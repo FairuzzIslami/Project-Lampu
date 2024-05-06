@@ -13,8 +13,5 @@ function btn(params){ //  ==> mengambil nilai dari function yang di buat ,sepert
     }else if(params == 'of'){
         lampuOf.src = 'images/off.gif'
     }
-    else if(params == 'on'){
-        lampuOf2 = 'images/on.gif'
-    }
     return lampuOf
 }

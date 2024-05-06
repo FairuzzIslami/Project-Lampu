@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./main.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
 </head>
 <body>
-    <div>
-        <img src="./Images/off.gif" alt="" id="ofLampu">
-        <h2>HIDUPKAN LAMPU</h2>
-        <button onclick="btn('on')">Nyalakan</button>
-        <button onclick="btn('of')">Matikan</button>
+    <div class="flex justify-center item-center min-h-screen bg-green-800 w-full gap-12">
+        <div class="flex flex-col gap-2 items-center py-8">
+            <img src="./Images/off.gif" alt="" id="ofLampu">
+            <h2>HIDUPKAN LAMPU</h2>
+            <button onclick="btn('on')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Nyalakan</button>
+            <button onclick="btn('of')" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Matikan</button>
+        </div>
+        <div class="flex flex-col gap-2 items-center py-8">
+            <img src="./Images/off.gif" alt="" id="ofLampu2">
+            <h2>HIDUPKAN LAMPU</h2>
+            <button onclick="btn('on')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Nyalakan</button>
+            <button onclick="btn('of')" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Matikan</button>
+        </div>
+        <div class="flex flex-col gap-2 items-center py-8">
+            <img src="./Images/off.gif" alt="" id="ofLampu3">
+            <h2>HIDUPKAN LAMPU</h2>
+            <button onclick="btn('on')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Nyalakan</button>
+            <button onclick="btn('of')" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Matikan</button>
+        </div>
     </div>
-    <div>
-        <img src="./Images/off.gif" alt="" id="ofLampu2">
-        <h2>HIDUPKAN LAMPU</h2>
-        <button onclick="btn('on')">Nyalakan</button>
-        <button onclick="btn('of')">Matikan</button>
-    </div>
-    <div>
-        <img src="./Images/off.gif" alt="" id="ofLampu3">
-        <h2>HIDUPKAN LAMPU</h2>
-        <button onclick="btn('on')">Nyalakan</button>
-        <button onclick="btn('of')">Matikan</button>
-    </div>
-    
+    <style>
+        .button-warning {
+            background: rgb(223, 117, 20);
+            color: white;
+        }
+    </style>
 </body>
 </html>
